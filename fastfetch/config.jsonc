@@ -1,0 +1,67 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  
+  "logo": {
+        "type": "kitty-direct",
+        "source": "/home/kashi/.config/fastfetch/logo.png",
+        "width": 15, 
+        "height": 10,
+        "padding": {
+          "top": 3,
+          "left": 5
+        }
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+	"break",
+	"break",
+	{
+            "type": "title",
+            "keyWidth": 10
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "33",  // = color3
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "33",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "33",  
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "33", 
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "33", 
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "33", 
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "33", 
+        },
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "33", 
+        }
+    ]
+}
