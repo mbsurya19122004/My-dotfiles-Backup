@@ -88,6 +88,18 @@ StyledPopup {
                     label: Translation.tr("Load:")
                     value: `${Math.round(ResourceUsage.cpuUsage * 100)}%`
                 }
+                StyledPopupValueRow {
+                    icon: "device_thermostat"
+                    label: Translation.tr("Temp:")
+                    value: {
+                        try {
+                            var raw = File.read("/sys/class/thermal/thermal_zone0/temp")
+                            return raw ? Math.round(parseInt(raw.trim()) / 1000) + "°C" : "N/A"
+                        } catch(e) {
+                            return "N/A"
+                        }
+                    }
+                }
             }
         }
     }
