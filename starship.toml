@@ -7,11 +7,11 @@ add_newline = false
 # Cool stuff 󰜥   
 
 # format = """
-# $cmd_duration$username$hostname  $directory $git_branch
+# $cmd_duration$username$hostname $directory $git_branch
 # $character
 # """
 format = """
-$cmd_duration 󰜥 $directory $python $git_branch
+$cmd_duration 󰜥 $directory $git_branch
 $character"""
 
 # Replace the "❯" symbol in the prompt with "➜"
