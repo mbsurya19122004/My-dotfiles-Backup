@@ -1,67 +1,119 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  
-  "logo": {
-        "type": "kitty-direct",
-        "source": "/home/kashi/.config/fastfetch/logo.png",
-        "width": 15, 
-        "height": 10,
-        "padding": {
-          "top": 3,
-          "left": 5
-        }
-    },
-    "display": {
-        "separator": " "
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.config/fastfetch/images/binah.png",
+        "type": "kitty", 
+        // "height": 30,
+        // "width": 38,
+        // "padding": {
+        //     "left": 3
+        // }
     },
     "modules": [
-	"break",
-	"break",
-	{
-            "type": "title",
-            "keyWidth": 10
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[33m┌──────────────────────System Info──────────────────────┐"
         },
+        {
+            "type": "host",
+            "key": " PC",
+            "keyColor": "red",
+            "format": "Acer Nitro V15"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├",
+            "showPeCoreCount": true,
+            "keyColor": "red"
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰢮",
+            "keyColor": "red"
+        },
+        {
+            "type": "memory",
+            "key": "│ ├",
+            "keyColor": "red"
+        },
+        {
+            "type": "disk",
+            "key": "│ └",
+            "keyColor": "red",
+	    "format": "{1} / {2} ({3}) - {9}"
+	    },
         "break",
         {
             "type": "os",
-            "key": " ",
-            "keyColor": "33",  // = color3
+            "key": " OS",
+            "keyColor": "green"
         },
         {
             "type": "kernel",
-            "key": " ",
-            "keyColor": "33",
+            "key": "│ ├",
+            "keyColor": "green"
         },
         {
             "type": "packages",
-            "format": "{} (pacman)",
-            "key": " ",
-            "keyColor": "33",  
+            "key": "│ ├󰏖",
+            "keyColor": "green"
         },
-        {
+	{
+	    "type": "terminal",
+            "key": "│ ├",
+            "keyColor": "green"
+        },
+	{
             "type": "shell",
-            "key": " ",
-            "keyColor": "33", 
+            "key": "└ └",
+            "keyColor": "green"
         },
         {
-            "type": "terminal",
-            "key": " ",
-            "keyColor": "33", 
+            "type": "custom",
+            "format": "\u001b[33m└───────────────────────────────────────────────────────┘"
         },
         {
-            "type": "wm",
-            "key": " ",
-            "keyColor": "33", 
+            "type": "custom",
+            "format": "\u001b[33m┌───────────────────Current State───────────────────────┐"
         },
         {
             "type": "uptime",
-            "key": " ",
-            "keyColor": "33", 
+            "key": "󰔚 Uptime",
+            "keyColor": "magenta"
         },
         {
-            "type": "media",
-            "key": "󰝚 ",
-            "keyColor": "33", 
-        }
+            "type": "command",
+            "text": "acpi -b | awk -F', ' '{print $2}'",
+            "shell": "/usr/bin/fish",
+            "key": "󰁹 Battery",
+            "keyColor": "magenta"
+        },
+	{ 
+	    "type": "media",
+	    "key": "󰎆 Music",
+	    "keyColor": "magenta",
+	    "format": "{1} - {4}"
+	},
+	{
+	    "type": "datetime",
+	    "key": "󰅐 Date and Time",
+	    "keyColor": "magenta",
+	    "format": "{3}/{11}/{1} - {14}:{18} {22}"
+	},
+	{ 
+	    "type": "custom",
+	    "format": "󰍡 Talk is cheap. Show me the code....",
+	    "outputColor": "cyan"
+	},
+        {
+            "type": "custom",
+            "format": "\u001b[33m└───────────────────────────────────────────────────────┘"
+        },
+        {"type": "colors",
+        "paddingLeft": 20,
+        "symbol": "star"
+        },
+        "break"
     ]
 }
