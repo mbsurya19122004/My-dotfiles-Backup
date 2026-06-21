@@ -1,0 +1,144 @@
+primary_paletteKeyColor 1AFF5C
+secondary_paletteKeyColor 1AFF5C
+tertiary_paletteKeyColor 1AFF5C
+neutral_paletteKeyColor F4FFF4
+neutral_variant_paletteKeyColor DFFFE5
+
+background F8FFF8
+onBackground 001400
+
+surface F4FFF4
+surfaceDim E8FFE8
+surfaceBright FFFFFF
+
+surfaceContainerLowest FFFFFF
+surfaceContainerLow F0FFF0
+surfaceContainer F4FFF4
+surfaceContainerHigh E8FFE8
+surfaceContainerHighest DDFFDD
+
+onSurface 001400
+
+surfaceVariant DFFFE5
+onSurfaceVariant 005500
+
+inverseSurface 001400
+inverseOnSurface 1AFF5C
+
+outline 1AFF5C
+outlineVariant 99D9AA
+
+shadow 000000
+scrim 000000
+
+surfaceTint 1AFF5C
+
+primary 00CC44
+onPrimary FFFFFF
+primaryContainer B8FFC8
+onPrimaryContainer 001A00
+
+inversePrimary 1AFF5C
+
+secondary 00CC44
+onSecondary FFFFFF
+secondaryContainer CFFFD9
+onSecondaryContainer 001A00
+
+tertiary 00CC44
+onTertiary FFFFFF
+tertiaryContainer DFFFE5
+onTertiaryContainer 001A00
+
+error D00036
+onError FFFFFF
+errorContainer FFDADA
+onErrorContainer 3A0008
+
+primaryFixed B8FFC8
+primaryFixedDim 1AFF5C
+onPrimaryFixed 001400
+onPrimaryFixedVariant 005500
+
+secondaryFixed B8FFC8
+secondaryFixedDim 1AFF5C
+onSecondaryFixed 001400
+onSecondaryFixedVariant 005500
+
+tertiaryFixed B8FFC8
+tertiaryFixedDim 1AFF5C
+onTertiaryFixed 001400
+onTertiaryFixedVariant 005500
+
+term0 F8FFF8
+term1 D00036
+term2 00CC44
+term3 00CC44
+term4 00CC44
+term5 00CC44
+term6 00CC44
+term7 003300
+
+term8 AADDAA
+term9 FF3355
+term10 1AFF5C
+term11 33DD66
+term12 33DD66
+term13 33DD66
+term14 33DD66
+term15 001400
+
+rosewater 00CC44
+flamingo 00CC44
+pink 00CC44
+mauve 00CC44
+
+red D00036
+maroon FF3355
+peach 00CC44
+yellow 00CC44
+
+green 00CC44
+teal 00CC44
+
+sky 00CC44
+sapphire 00CC44
+blue 00CC44
+lavender 00CC44
+
+klink 00AA33
+klinkSelection 1AFF5C
+
+kvisited 008822
+kvisitedSelection 1AFF5C
+
+knegative D00036
+knegativeSelection FF3355
+
+kneutral 00CC44
+kneutralSelection 1AFF5C
+
+kpositive 00CC44
+kpositiveSelection 1AFF5C
+
+text 001400
+subtext1 226622
+subtext0 558855
+
+overlay2 AADDAA
+overlay1 CCEECC
+overlay0 DFFFE5
+
+surface2 DDFFDD
+surface1 E8FFE8
+surface0 F4FFF4
+
+base F8FFF8
+mantle F0FFF0
+crust E8FFE8
+
+success 00CC44
+onSuccess FFFFFF
+successContainer B8FFC8
+onSuccessContainer 001A00
+
