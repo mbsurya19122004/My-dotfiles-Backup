@@ -1,0 +1,224 @@
+{
+    "appearance": {
+        "deformScale": 0.5,
+        "padding": {
+            "scale": 1
+        },
+        "rounding": {
+            "scale": 1
+        },
+        "spacing": {
+            "scale": 1
+        },
+        "transparency": {
+            "base": 0,
+            "enabled": false,
+            "layers": 0
+        }
+    },
+    "background": {
+        "desktopClock": {
+            "background": {
+                "blur": true,
+                "enabled": false,
+                "opacity": 0.2
+            },
+            "enabled": true,
+            "invertColors": false,
+            "position": "top-center"
+        },
+        "enabled": true,
+        "visualiser": {
+            "autoHide": true,
+            "enabled": true,
+            "rounding": 1,
+            "spacing": 0.5762468697829717
+        },
+        "wallpaperEnabled": true
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": true,
+            "inverted": true
+        },
+        "clock": {
+            "background": false,
+            "showDate": true,
+            "showIcon": false
+        },
+        "dragThreshold": 100,
+        "persistent": false,
+        "popouts": {
+            "activeWindow": true,
+            "statusIcons": true,
+            "tray": true
+        },
+        "scrollActions": {
+            "volume": true
+        },
+        "showOnHover": true,
+        "status": {
+            "showAudio": true,
+            "showBattery": true,
+            "showKbLayout": true,
+            "showLockStatus": true,
+            "showMicrophone": true
+        },
+        "tray": {
+            "background": false,
+            "compact": false,
+            "recolour": false
+        },
+        "workspaces": {
+            "activeIndicator": true,
+            "maxWindowIcons": 5,
+            "occupiedBg": false,
+            "showWindows": true,
+            "shown": 7
+        }
+    },
+    "border": {
+        "rounding": 18,
+        "thickness": 10
+    },
+    "dashboard": {
+        "enabled": true,
+        "mediaUpdateInterval": 1000,
+        "performance": {
+            "showBattery": true,
+            "showNetwork": true
+        },
+        "resourceUpdateInterval": 1000,
+        "showWeather": true
+    },
+    "general": {
+        "battery": {
+            "criticalLevel": 3,
+            "warnLevels": [
+                {
+                    "icon": "battery_android_frame_2",
+                    "level": 75,
+                    "message": "You might want to plug in a charger",
+                    "title": "Low battery"
+                },
+                {
+                    "icon": "battery_android_frame_1",
+                    "level": 70,
+                    "message": "You should probably plug in a charger <b>now</b>",
+                    "title": "Did you see the previous message?"
+                },
+                {
+                    "icon": "battery_android_frame_1",
+                    "level": 50,
+                    "message": "You should probably plug in a charger <b> RIGHT NOW</b> ",
+                    "title": "Save Battery Health"
+                },
+                {
+                    "critical": true,
+                    "icon": "battery_android_alert",
+                    "level": 20,
+                    "message": "PLUG THE CHARGER RIGHT NOW!!",
+                    "title": "Critical battery level"
+                }
+            ]
+        },
+        "logo": ""
+    },
+    "launcher": {
+        "enableDangerousActions": true,
+        "favouriteApps": [
+        ],
+        "hiddenApps": [
+            "bssh",
+            "bvnc",
+            "avahi-discover",
+            "blueman-adapters",
+            "blueman-manager",
+            "btop",
+            "cmake-gui",
+            "rofi",
+            "mpv",
+            "qv4l2",
+            "qvidcap",
+            "rofi-theme-selector",
+            "foot-server",
+            "footclient",
+            "vim",
+            "nvidia-settings",
+            "assistant",
+            "qdbusviewer",
+            "linguist",
+            "designer",
+            "ipython",
+            "net.davidotek.pupgui2",
+            "winetricks"
+        ],
+        "maxShown": 6,
+        "maxWallpapers": 5,
+        "showOnHover": true,
+        "useFuzzy": {
+            "actions": false,
+            "apps": false,
+            "schemes": false,
+            "variants": false,
+            "wallpapers": false
+        }
+    },
+    "paths": {
+        "lockNoNotifsPic": "/home/kashi/Pictures/Wallpapers/noNoti2.png",
+        "mediaGif": "/home/kashi/Downloads/imgs/gojo-twerk-dance-fast.gif",
+        "noNotifsPic": "/home/kashi/Pictures/Wallpapers/noNoti1.png",
+        "sessionGif": "/home/kashi/Downloads/imgs/Frieren-rotating.gif",
+        "wallpaperDir": "/home/kashi/Pictures/Wallpapers/Static Wallpapers"
+    },
+    "services": {
+        "defaultPlayer": "Spotify",
+        "gpuType": "",
+        "lyricsBackend": "LyricsBackend::Auto",
+        "maxVolume": 1.5,
+        "smartScheme": true,
+        "useFahrenheit": false,
+        "useFahrenheitPerformance": false,
+        "useTwelveHourClock": true,
+        "visualiserBars": 60
+    },
+    "session": {
+        "commands": {
+            "hibernate": [
+                "bash",
+                "-c",
+                "loginctl lock-session && sleep 1 && systemctl suspend"
+            ],
+            "logout": [
+                "hyprctl",
+                "dispatch",
+                "exit"
+            ],
+            "reboot": [
+                "systemctl",
+                "reboot"
+            ],
+            "shutdown": [
+                "systemctl",
+                "poweroff"
+            ]
+        },
+        "dragThreshold": 30,
+        "enabled": true,
+        "icons": {
+            "hibernate": "downloading",
+            "logout": "logout",
+            "reboot": "cached",
+            "shutdown": "power_settings_new"
+        },
+        "vimKeybinds": false
+    },
+    "sidebar": {
+        "enabled": true
+    },
+    "utilities": {
+        "toasts": {
+            "nowPlaying": true
+        }
+    }
+}
