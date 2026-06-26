@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR __fish_initialized:4300
+SETUVAR --export fish_user_paths:/home/kashi/\x2envm/versions/node/v22\x2e3\x2e0/bin
